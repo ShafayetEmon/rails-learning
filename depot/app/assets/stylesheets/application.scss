@@ -57,7 +57,7 @@ header.main {
             padding: 1em;
 
         }
-
+        
         ul {
             list-style: none;
             margin: 0;
@@ -71,7 +71,7 @@ header.main {
                 margin: 0;
                 padding: 0.5em;
                 text-transform: uppercase;
-                letter-spacing: 0.354em;
+                letter-spacing: 0.254em;
 
                 a {
                     color: #bfb;
@@ -81,6 +81,9 @@ header.main {
                 a:hover {
                     background: none;
                     color: white;
+                }
+                p {
+                    color: #bfb;
                 }
             }
         }

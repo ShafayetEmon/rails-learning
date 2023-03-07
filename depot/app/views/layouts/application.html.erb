@@ -18,7 +18,10 @@
           <li><a href="/questions">Guestions</a></li>
           <li><a href="/news">News</a></li>
           <li><a href="/Contact">Contact</a></li>
+          <li><p><%= Time.now.strftime("%d/%m/%Y %I:%M %p") %></p></li>
         </ul>
+        
+        
       </nav>
 
       <main class = '<%= controller.controller_name %>'>
