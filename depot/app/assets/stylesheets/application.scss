@@ -33,7 +33,8 @@ header.main {
     }
 }
 
-.notice, #notice {
+.notice,
+#notice {
     background: #ffb;
     border-radius: 0.5em;
     border: solid 0.177em #882;
@@ -68,7 +69,7 @@ header.main {
             padding: 1em;
 
         }
-        
+
         ul {
             list-style: none;
             margin: 0;
@@ -93,6 +94,7 @@ header.main {
                     background: none;
                     color: white;
                 }
+
                 p {
                     color: #bfb;
                 }
@@ -102,5 +104,22 @@ header.main {
 
     main {
         padding: 0.5em;
+    }
+}
+
+#cart {
+    article {
+        h2 {
+            margin-top: 0;
+        }
+
+        background: white;
+        border-radius: 0.5em;
+        margin: 1em;
+        padding: 1.414em;
+
+        @media (min-width: 30em) {
+            margin: 0; 
+        }
     }
 }
