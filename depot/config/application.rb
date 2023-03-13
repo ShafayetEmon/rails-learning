@@ -5,7 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
+config.filter_parameters += [ :credit_card_number ]
 module Depot
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
