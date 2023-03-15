@@ -17,10 +17,10 @@
           <%= render_if @cart && @cart.line_items.any?, @cart %>
         </div>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/questions">Guestions</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="/Contact">Contact</a></li>
+          <li><a href="/"><%= t('.home') %></a></li>
+          <li><a href="/questions"><%= t('.questions') %></a></li>
+          <li><a href="/news"><%= t('.news') %></a></li>
+          <li><a href="/contact"><%= t('.contact') %></a></li>
           <li><p><%= Time.now.strftime("%d/%m/%Y %I:%M %p") %></p></li>
         </ul>
         
@@ -35,7 +35,7 @@
             
           <% else %>
             <ul>
-                <li><%= button_to 'Login', login_path, method: :get%></li>
+                <li><a href="/login"><%= t('.login') %></a></li>
               </ul>
           <% end %>
         </nav>
