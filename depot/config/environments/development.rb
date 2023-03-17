@@ -74,4 +74,5 @@ Rails.application.configure do
       enable_starttls_auto: true
     }
   #end 
+  config.active_storage.service = :local
 end
