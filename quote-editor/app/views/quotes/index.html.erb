@@ -9,6 +9,12 @@
                 data: { turbo_frame: dom_id(Quote.new) } %>
   </div>
 
+  <div class="form-outline mb-4">
+    <%= form_with url: "", method: :get, class:"d-flex col-12", data: { turbo_frame: "quotes", turbo_action: "advance"}  do |f| %>
+        <%= f.search_field :search, value: params[:search], class: "form-control col-12" , placeholder: "Search Quote"%>
+    <% end %>
+  </div>
+  
   <%= turbo_frame_tag Quote.new %>
 
   <%= turbo_frame_tag "quotes" do %>

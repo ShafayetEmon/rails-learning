@@ -8,4 +8,11 @@ class Quote < ApplicationRecord
   scope :ordered, -> { order(id: :desc) }
 
   broadcasts_to ->(quote) { [quote.company, "quotes"] }, inserts_by: :prepend
+
+  include PgSearch::Model
+  pg_search_scope :search_name, against: :name
+
+  def self.search(search)
+    Quote.search_name(search)
+  end
 end

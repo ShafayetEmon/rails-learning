@@ -3,6 +3,7 @@ class QuotesController < ApplicationController
 
   def index
     @quotes = current_company.quotes.ordered
+    @quotes = @quotes.search(params[:search]) if params[:search].present?
   end
 
   def show
